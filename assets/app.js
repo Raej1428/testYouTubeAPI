@@ -237,14 +237,14 @@ $(document).ready(function () {
 
         $.ajax({
             method: "GET",
-            url: "https//www.googleapis.com/youtube/vs/search",
+            url: "https//www.googleapis.com/youtube/v3/search",
             data: {
                 key: apikey,
                 q: artistIn,
                 part: "snippet",
                 maxResults: 3,
                 type: "video",
-                videoEmbeddable: true,
+                videoEmbeddable: true
             }
         }).done((data) => {
 
