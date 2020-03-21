@@ -237,7 +237,7 @@ $(document).ready(function () {
 
         $.ajax({
             method: "GET",
-            urlG: "https//www.googleapis.com/youtube/vs/search",
+            url: "https//www.googleapis.com/youtube/vs/search",
             data: {
                 key: apikey,
                 q: artistIn,
