@@ -234,6 +234,7 @@ $(document).ready(function () {
         console.log(artistIn);
 
         var apikey = "AIzaSyBA6-_OD-6JJj0-Gr4FjtF6KIeZeBQxXQ8"
+
         $.ajax({
             method: "GET",
             urlG: "https//www.googleapis.com/youtube/vs/search",
@@ -247,7 +248,7 @@ $(document).ready(function () {
             }
         }).done((data) => {
 
-            var videos = data.items;
+            var videos = data;
             console.log(videos)
 
         }).catch(function(err){console.log("you have an:" + JSON.stringify(err))});
