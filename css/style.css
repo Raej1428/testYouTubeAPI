@@ -1,17 +1,12 @@
 body {
-  background-image: url(http://goldwallpapers.com/uploads/posts/backgrounds-for-music/backgrounds_for_music_012.jpg);
+  background-image: url("../assets/Screen_Shot_2018-02-23_at_8.16.01_PM_2048x2048.png");
   background-size: cover;
-}
-
-.container {
-  width: auto;
 }
 
 .mainContent {
   background-color: rgb(150, 104, 172);
   padding: 10px;
-  float: left;
-  margin: 0 auto;
+
 }
 
 .gifDiv {
@@ -19,7 +14,6 @@ body {
   border-style: solid;
   border-width: 1px;
   min-height: 260px;
-  margin: 0 auto;
   background-color: lightgray;
   border-radius: 10px;
   padding: 5px;
@@ -27,22 +21,18 @@ body {
 
 
 .otherContent {
-  float: left;
-  margin: 0 auto;
   background-color: rgb(150, 104, 172);
   padding: 10px;
 }
 
 .jumbotron {
-  width: 100%;
-  height: 183px;
-  background-color: lightgray;
+  height: 200px;
+  background-color: lightgray, gray, lightcyan;
   border-radius: 10px;
   text-align: center;
 }
 
 .search {
-  margin: 0 auto;
   background-color: lightgray;
   border-radius: 10px;
   text-align: center;
@@ -50,7 +40,6 @@ body {
 }
 
 .bioDiv{
-  margin: 0 auto;
   min-height: 260px;
   background-color: lightgray;
   border: black;
@@ -61,7 +50,6 @@ body {
 }
 
 .spotDiv {
-  margin: 0 auto;
   min-height: 260px;
   background-color: lightgray;
   border: black;
@@ -72,7 +60,6 @@ body {
 }
 
 .tmDiv {
-  margin: 0 auto;
   min-height: 260px;
   background-color: lightgray;
   border: black;
@@ -83,7 +70,6 @@ body {
 }
 
 .newsDiv {
-  margin: 0 auto;
   min-height: 260px;
   background-color: lightgray;
   border: black;
@@ -95,8 +81,6 @@ body {
 }
 
 .footer-content{
-  float: none;
-  margin: 0 auto;
   background-color: rgb(150, 104, 172);
   font-family: 'Montserrat', sans-serif;
   text-align: center;
@@ -121,8 +105,6 @@ h4 {
   border: black;
   border-style: solid;
   border-width: 1px;
-  min-height: auto;
-  margin: 0 auto;
   background-color: lightgray;
   border-radius: 10px;
   padding: 5px;
@@ -133,7 +115,6 @@ h4 {
   border-style: solid;
   border-width: 1px;
   min-height: 260px;
-  margin: 0 auto;
   background-color: lightgray;
   border-radius: 10px;
   padding: 5px;

@@ -23,7 +23,7 @@ $(document).ready(function () {
             artist +
             "&api_key=o2BMu32QNHXQZs2A5dgV6kntwDSDTrXU&limit=3";
 
-        console.log(queryURL);
+        // console.log(queryURL);
 
         $.get(queryURL, function (response2) {
             console.log(response2);
@@ -48,7 +48,7 @@ $(document).ready(function () {
         }).then(function () {
 
             $.ajax({
-                url: "http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=" + artist + "&api_key=2b35547bd5675d8ecb2b911ee9901f59&format=json",
+                url: "https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=" + artist + "&api_key=2b35547bd5675d8ecb2b911ee9901f59&format=json",
                 success: function (response3) {
 
                     var results3 = response3.artist;
@@ -116,7 +116,7 @@ $(document).ready(function () {
                 "headers": {
                     "x-rapidapi-host": "contextualwebsearch-websearch-v1.p.rapidapi.com",
                     "x-rapidapi-key": "286743b9e8mshca96ef72bc84158p10a340jsn84bc27c45ef1"
-                },
+                }
             };
 
             $.ajax(settings).done(function (response4) {
@@ -171,25 +171,25 @@ $(document).ready(function () {
                 event.setVolume(100);
                 event.playVideo();
             }
-            function changeBorderColor(playerStatus) {
-                var color;
-                if (playerStatus == -1) {
-                    color = "#37474F"; // unstarted = gray
-                } else if (playerStatus == 0) {
-                    color = "#FFFF00"; // ended = yellow
-                } else if (playerStatus == 1) {
-                    color = "#33691E"; // playing = green
-                } else if (playerStatus == 2) {
-                    color = "#DD2C00"; // paused = red
-                } else if (playerStatus == 3) {
-                    color = "#AA00FF"; // buffering = purple
-                } else if (playerStatus == 5) {
-                    color = "#FF6DOO"; // video cued = orange
-                }
-                if (color) {
-                    document.getElementById('existing-iframe-example').style.borderColor = color;
-                }
-            }
+            // function changeBorderColor(playerStatus) {
+            //     var color;
+            //     if (playerStatus == -1) {
+            //         color = "#37474F"; // unstarted = gray
+            //     } else if (playerStatus == 0) {
+            //         color = "#FFFF00"; // ended = yellow
+            //     } else if (playerStatus == 1) {
+            //         color = "#33691E"; // playing = green
+            //     } else if (playerStatus == 2) {
+            //         color = "#DD2C00"; // paused = red
+            //     } else if (playerStatus == 3) {
+            //         color = "#AA00FF"; // buffering = purple
+            //     } else if (playerStatus == 5) {
+            //         color = "#FF6DOO"; // video cued = orange
+            //     }
+            //     if (color) {
+            //         document.getElementById('existing-iframe-example').style.borderColor = color;
+            //     }
+            // }
             function onPlayerStateChange(event) {
                 changeBorderColor(event.data);
 
