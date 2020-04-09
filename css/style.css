@@ -139,3 +139,31 @@ h4 {
   padding: 5px;
 }
 
+
+@media screen and (max-width: 1333px) {
+  
+}
+
+@media screen and (max-width: 1050px) {
+ 
+}
+
+@media screen and (max-width: 900px) {
+  
+}
+
+@media screen and (max-width: 768px) {
+ 
+}
+
+@media screen and (max-width: 640px) {
+
+}
+
+@media screen and (max-width: 500px) {
+
+}
+
+@media screen and (max-width: 340px) {
+ 
+}

@@ -32,7 +32,7 @@ $(document).ready(function () {
 
             for (var i = 0; i < results2.length; i++) {
                 // Creating and storing a div tag
-                var newYTDiv = $("<div>");
+                var newgifDiv = $("<div>");
                 // Creating a paragraph tag with the result item's rating
                 var p = $("<p>").text(results2[i].title);
                 // Creating and storing an image tag
@@ -40,10 +40,10 @@ $(document).ready(function () {
                 // Setting the src attribute of the image to a property pulled off the result item
                 gifImage.attr("src", results2[i].images.original.url);
                 // Appending the paragraph and image tag to the animalDiv
-                newYTDiv.append(p);
-                newYTDiv.prepend(gifImage);
+                newgifDiv.append(p);
+                newgifDiv.prepend(gifImage);
                 // Prependng the animalDiv to the HTML page in the "#gifs-appear-here" div
-                $("#gifImage").prepend(newYTDiv);
+                $("#gifImage").prepend(newgifDiv);
             };
         }).then(function () {
 
